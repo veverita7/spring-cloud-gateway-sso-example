@@ -1,0 +1,10 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /api/v1
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8180/auth/realms/dev/protocol/openid-connect/certs
